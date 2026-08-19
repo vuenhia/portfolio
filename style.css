@@ -1,0 +1,144 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	display: grid;
+	font-family: "Lato", sans-serif;
+	background-color: #191d2e;
+	color: #e6e6e6;
+}
+main {
+	place-content: center;
+	text-align: center;
+}
+a {
+	text-decoration: none;
+	border-radius: 5px;
+	color: #e6e6e6;
+}
+a:hover {
+	background-color: #00d9ff;
+}
+a:visited {
+	color: #8899cc;
+}
+h1 h2 h3 {
+	font-family: "Montserrat";
+}
+h1 {
+	font-size: 3rem;
+}
+h2 h3 {
+	font-size: 2.5rem;
+}
+h3 {
+	margin: 0;
+	font-size: 2rem;
+}
+p {
+	font-size: 1.5rem;
+	margin: 0;
+}
+.card-image {
+	height: 50%; /* fills half of project-card */
+	width: 100%;
+	overflow: hidden; /* hides extra image overflow */
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.card-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover; /* makes it fill while keeping aspect */
+	display: block; /* removes tiny inline gap */
+}
+/* class */
+.link-container {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+}
+.project-button {
+	border: 3px solid black;
+	width: 10%;
+	margin: 0 auto;
+	border-radius: 25px;
+}
+.project-button:hover {
+	cursor: pointer;
+	background: tan;
+}
+.project-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin-top: 20px;
+	gap: 5px;
+	width: 60%;
+	margin: 0 auto;
+}
+.project-card {
+	width: 400px;
+	height: 500px;
+	margin: 50px auto;
+	border-radius: 25px;
+	overflow: hidden;
+	transition: all 0.3s ease; /* smooth hover animation */
+}
+.project-card:hover {
+	border-color: #00d9ff; /* change border color */
+	box-shadow: 0 0 20px #00d9ff; /* glowing effect */
+}
+.card-image {
+	height: 50%;
+	margin-top: 0;
+}
+.card-desc {
+	height: 50%;
+	background-color: #21263a;
+	text-align: start;
+}
+.card-cont {
+	height: 100%;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding-top: 25px;
+}
+.card-cont p {
+	font-size: 1rem;
+	margin: 0;
+}
+.card-cont a {
+	width: 15%;
+}
+.description {
+	width: 50%;
+	margin: 0 auto;
+}
+/* media */
+@media (max-width: 768px) {
+	h1 {
+		font-size: 2.5rem;
+	}
+
+	.project-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.card-image {
+		height: 180px;
+	}
+}
+
+@media (max-width: 480px) {
+	h1 {
+		font-size: 2rem;
+	}
+
+	.card-image {
+		height: 150px;
+	}
+}
