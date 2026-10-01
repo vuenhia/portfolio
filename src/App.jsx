@@ -7,7 +7,7 @@ const profile = {
 	tagline: "I build full-stack tools with React, TypeScript, and Node",
 	github: "https://github.com/vuenhia",
 	email: "vuenhia12@gmail.com",
-	resumeUrl: "/NhiaVue_M.pdf",
+	resumeUrl: "/NhiaVue_Resume.pdf",
 	linkedin: "https://www.linkedin.com/in/nhia-vue-3aa541273/",
 };
 
