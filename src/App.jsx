@@ -48,7 +48,7 @@ const projects = [
 		name: "Kanban Board",
 		period: "2025",
 		description:
-			"A full-stack task board with drag-and-drop columns, backend CRUD routes, and a tested database connection.",
+			"A full-stack task board with drag-and-drop columns, backend CRUD routes, and a tested database connection. Might take a couple seconds for the tasks to load, I am currently deploying backend through the free version of Render.",
 		stack: ["React", "Express", "Node.js", "MongoDB"],
 		href: "https://kanban-alpha-orpin.vercel.app/",
 		github: "https://github.com/vuenhia/kanban",
